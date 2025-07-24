@@ -35,6 +35,10 @@
   border-radius: 8px;
   border: none;
 }
+.description{
+  font-size: 1rem;
+  font-weight: 400;
+}
 /* navbar styles */
 .brand{
   font-size: 2.8125rem;
@@ -66,12 +70,36 @@
   font-size: 4rem;
   font-weight: 700;
 }
-.banner-description{
-  font-size: 1rem;
-  font-weight: 400;
-}
 .banner-img img{
   width: 100%;
+}
+/* features styles */
+.features{
+  align-items: center;
+  gap: 73px;
+  margin-top: 85px;
+}
+.imp-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.imp-container img{
+  width: 100%;
+}
+.features-content{
+  max-width: 537px;
+  margin: 0 auto;
+}
+.features-title{
+  font-size: 2.8125rem;
+  font-weight: 700;
+}
+.quick-list{
+  font-weight: 500;
+}
+.orange{
+  color: #FF900E;
 }
 /* responsive for small devices */
 @media screen and (max-width: 576px) {
