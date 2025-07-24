@@ -10,25 +10,39 @@
 .display-flex{
   display: flex;
 }
+.middle{
+  max-width: 1140px;
+  margin: 0 auto;
+}
 .dark-1{
-    color: #131313;
+  color: #131313;
 }
 .dark-2{
   color: #424242;
 }
+.dark-3{
+  color: #727272;
+}
 .bg-color{
   background-color: rgba(255, 144, 14, 0.1);
 }
+.btn-primary{
+  background-color: #FF900E;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 23px;
+  border-radius: 8px;
+  border: none;
+}
 /* navbar styles */
 .brand{
-    font-size: 45px;
-    font-weight: 700;
+  font-size: 2.8125rem;
+  font-weight: 700;
 }
 .navbar{
   justify-content: space-between;
   align-items: center;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 .links-container{
   gap: 25px;
@@ -38,6 +52,30 @@
 }
 .link{
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
+}
+/* banner styles */
+.banner-content{
+  max-width: 862px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.banner-title{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.banner-description{
+  font-size: 1rem;
+  font-weight: 400;
+}
+.banner-img img{
+  width: 100%;
+}
+/* responsive for small devices */
+@media screen and (max-width: 576px) {
+  .navbar, .links-container{
+    flex-direction: column;
+  }
 }
